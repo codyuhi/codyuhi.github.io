@@ -35,10 +35,6 @@ body {
     overflow-x:hidden;
 }
 
-.catchphrase:hover{
-    font-size: 1.25em;
-}
-
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
@@ -58,6 +54,15 @@ body {
         transform: translateX(0%);
     }
 }
+@keyframes slideDown {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(10%);
+    }
+}
 
 #cp1{
     /* This section calls the slideInFromLeft animation we defined above */
@@ -73,12 +78,18 @@ img{
     display:block;
     margin-left:auto;
     margin-right:auto;
-    transition: y .5s;
+    transition: top 2s;
 }
 
 .catchphrase{
-    transition: font-size .5s;
+    transition: all .5s;
     height:30em;
+    bottom: 0px;
+
+}
+.catchphrase:hover {
+    font-size: 1.05em;
+    bottom: 10px;
 }
 
  h1 {
@@ -87,4 +98,17 @@ img{
     font-size: 10em;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    display:block;
+    position:relative;
+}
+
+#sp{
+    z-index:0;
+    position:relative;
+    top:0px;
+    transition: all .5s;
+}
+#sp:hover{
+    
 }
