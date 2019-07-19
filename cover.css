@@ -89,7 +89,8 @@ img {
     /* max-width: 100%;
     max-height: 100%; */
     font-size: .75vw;
-
+    width:75%;
+    
     /* height: 30em; */
     bottom: 10px;
     background-image: url(banner2.png);
@@ -97,11 +98,16 @@ img {
     background-size: 40em;
     background-repeat: no-repeat;
     background-position: center;
+    margin:auto;
 }
 
 .catchphrase:hover {
     font-size: .85vw;
     bottom: 10px;
+}
+
+.cpBoundaries{
+    width:12.5%;
 }
 
 #banner {
