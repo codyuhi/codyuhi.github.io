@@ -1,11 +1,21 @@
 /* GLOBALS */
+body{
+    width:150%;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+
+    background-color: #333;
+}
 
 /* ID'S */
 #catchphrase{
 
 }
 #idbackground{
-
+    background-color: gainsboro;
+    color: #333;
 }
 #relevantedu{
 
@@ -14,18 +24,21 @@
 
 }
 #idprojects{
-
+    background-color: #dcc089;
 }
 #idhobbies{
 
 }
 #contact{
-    
+    background-color: white;
+    color: #333;
 }
 /* CLASSES */
 .section{
-    /* padding-top: 15vw;
-    padding-bottom: 15vw; */
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+    padding-left: 5vw;
+    color: white;
 }
 .edu{
 
