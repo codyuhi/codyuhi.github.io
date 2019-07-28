@@ -1,9 +1,9 @@
 /* GLOBALS */
-body{
+body {
     /* This group of CSS attributes
     Allows the entirety of the screen
     to be occupied */
-    width:110%;
+    width: 110%;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
@@ -26,51 +26,58 @@ body{
     animation-iteration-count: infinite;
     animation-direction: normal;
 }
-a:link{
+
+a:link {
     color: #ADD8E6;
 }
-a:visited{
+
+a:visited {
     color: #8FBC8F;
 }
-a:hover{
+
+a:hover {
     color: #E0FFFF;
 }
-a:active{
 
-}
+a:active {}
 
 /* ID'S */
-#catchphrase{
+#catchphrase {
     font-size: 4vw;
     font-family: 'Quattrocento';
 }
-#catchphrase:hover{
 
-}
-#cp1{
+#catchphrase:hover {}
+
+#cp1 {
     animation: 1s ease-out 0s 1 slideInFromLeft;
     transition: font-size .5s;
-    position:relative;
-    display:inline-block;
-    z-index: 2;
+    position: relative;
+    display: inline-block;
+    z-index: 3;
 }
-#cp2{
+
+#cp2 {
     animation: 2.25s ease-out 0s 1 slideInFromRight;
     transition: font-size .5s;
-    position:relative;
-    display:inline-block;
+    position: relative;
+    display: inline-block;
+    z-index: 3;
 }
-#cpimage{
+
+#cpimage {
     max-block-size: 27.5vw;
-    position:relative;
-    float:right;
-    top:-27.5vw;
-    left:-10vw;
+    position: relative;
+    float: right;
+    top: -27.5vw;
+    left: -10vw;
     opacity: 0;
     animation: 2s ease-in-out 3s 1 fadeIn;
     animation-fill-mode: forwards;
+    z-index: 2;
 }
-#name{
+
+#name {
     position: relative;
     top: -2vw;
     padding-left: 5vw;
@@ -78,14 +85,18 @@ a:active{
     opacity: 0;
     animation: 2s ease-in-out 3s 1 fadeIn;
     animation-fill-mode: forwards;
+    z-index: 2;
 }
-#description{
+
+#description {
     font-size: 2vw;
     padding-left: 5vw;
     opacity: 0;
     animation: 2s ease-in-out 5s 1 fadeIn;
     animation-fill-mode: forwards;
+    z-index: 2;
 }
+
 #idbackground {
     /* Set the background color to be
     a tan color for the background section */
@@ -93,24 +104,23 @@ a:active{
     background-color: #333;
     color: gainsboro;
 }
-#relevantedu{
 
-}
-#irrelevantedu{
+#relevantedu {}
 
-}
+#irrelevantedu {}
+
 #idprojects {
     /* Set the background color to be a 
     gray color for the projects section */
-    
+
     /* Set the text color to be a light black
     in the projects section */
     /* color: #333; */
 }
-#idhobbies{
 
-}
-#contact{
+#idhobbies {}
+
+#contact {
     /* Set the background color to be a
     white color for the contact section */
     background-color: white;
@@ -118,24 +128,27 @@ a:active{
     in the contact section */
     color: #333;
 }
+
 /* CLASSES */
-.navbar{
-    position:fixed;
-    z-index: 3;
-    display:inline-block;
+.navbar {
+    position: fixed;
+    z-index: 5;
+    display: inline-block;
     /* float: left; */
     padding-top: .75vw;
     padding-left: 12vw;
-    font-size:1.5vw;
+    font-size: 1.5vw;
     width: 100%;
 }
-.navbarelement{
+
+.navbarelement {
     padding-left: 5vw;
     padding-right: 5vw;
-    display:inline;
+    display: inline;
 
 }
-.section{
+
+.section {
     /* Pad section content so it doesn't run right
     along the edges of the page */
     padding-top: 15vw;
@@ -146,50 +159,64 @@ a:active{
     in the sections */
     color: white;
 }
-.edu{
 
+.backgroundboost::after {
+    background-color: #333;
+    opacity: .5;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
-.background{
 
-}
-.seemore{
+.edu {}
 
-}
+.background {}
+
+.seemore {}
 
 /* ANIMATIONS */
 
-@keyframes slideInFromLeft{
-    0%{
+@keyframes slideInFromLeft {
+    0% {
         transform: translateX(-100%);
     }
-    100%{
-        transform:translateX(0);
+
+    100% {
+        transform: translateX(0);
     }
 }
-@keyframes slideInFromRight{
-    0%{
+
+@keyframes slideInFromRight {
+    0% {
         transform: translateX(1000%);
     }
-    100%{
+
+    100% {
         transform: translateX(0%);
     }
 }
-@keyframes slideDown{
-    0%{
+
+@keyframes slideDown {
+    0% {
         transform: translateY(0%);
     }
-    100%{
+
+    100% {
         transform: translateY(10%);
     }
 }
-@keyframes fadeIn{
-    from{
+
+@keyframes fadeIn {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
+
 @keyframes backgroundscroller {
     from {
         background-position: 0% 0%;
