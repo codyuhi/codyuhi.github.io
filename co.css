@@ -1,23 +1,97 @@
 /* GLOBALS */
 body{
-    width:150%;
+    /* This group of CSS attributes
+    Allows the entirety of the screen
+    to be occupied */
+    width:110%;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
     margin-bottom: -10px;
-
-    background-color: #333;
-
+    /* Set the default background-color
+    to be a light black color */
+    background-image: url("bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    /* Set the default font size to be 3 * the viewport value */
     font-size: 3vw;
+    /* Disable the horizontal scrollbar */
+    overflow-x: hidden;
+
+    animation-name: backgroundscroller;
+    animation-duration: 400s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+a:link{
+    color: #ADD8E6;
+}
+a:visited{
+    color: #8FBC8F;
+}
+a:hover{
+    color: #E0FFFF;
+}
+a:active{
+
 }
 
 /* ID'S */
 #catchphrase{
+    font-size: 4vw;
+    font-family: 'Quattrocento';
+}
+#catchphrase:hover{
 
 }
-#idbackground{
-    background-color: gainsboro;
-    color: #333;
+#cp1{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    transition: font-size .5s;
+    position:relative;
+    display:inline-block;
+    z-index: 2;
+}
+#cp2{
+    animation: 2.25s ease-out 0s 1 slideInFromRight;
+    transition: font-size .5s;
+    position:relative;
+    display:inline-block;
+}
+#cpimage{
+    max-block-size: 27.5vw;
+    position:relative;
+    float:right;
+    top:-27.5vw;
+    left:-10vw;
+    opacity: 0;
+    animation: 2s ease-in-out 3s 1 fadeIn;
+    animation-fill-mode: forwards;
+}
+#name{
+    position: relative;
+    top: -2vw;
+    padding-left: 5vw;
+    font-size: 3vw;
+    opacity: 0;
+    animation: 2s ease-in-out 3s 1 fadeIn;
+    animation-fill-mode: forwards;
+}
+#description{
+    font-size: 2vw;
+    padding-left: 5vw;
+    opacity: 0;
+    animation: 2s ease-in-out 5s 1 fadeIn;
+    animation-fill-mode: forwards;
+}
+#idbackground {
+    /* Set the background color to be
+    a tan color for the background section */
+    /* background-color: #dcc089; */
+    background-color: #333;
+    color: gainsboro;
 }
 #relevantedu{
 
@@ -25,21 +99,51 @@ body{
 #irrelevantedu{
 
 }
-#idprojects{
-    background-color: #dcc089;
+#idprojects {
+    /* Set the background color to be a 
+    gray color for the projects section */
+    
+    /* Set the text color to be a light black
+    in the projects section */
+    /* color: #333; */
 }
 #idhobbies{
 
 }
 #contact{
+    /* Set the background color to be a
+    white color for the contact section */
     background-color: white;
+    /* Set the text color to be a light black
+    in the contact section */
     color: #333;
 }
 /* CLASSES */
+.navbar{
+    position:fixed;
+    z-index: 3;
+    display:inline-block;
+    /* float: left; */
+    padding-top: .75vw;
+    padding-left: 12vw;
+    font-size:1.5vw;
+    width: 100%;
+}
+.navbarelement{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display:inline;
+
+}
 .section{
+    /* Pad section content so it doesn't run right
+    along the edges of the page */
     padding-top: 15vw;
     padding-bottom: 15vw;
-    padding-left: 5vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    /* Set the text color to be white
+    in the sections */
     color: white;
 }
 .edu{
@@ -50,4 +154,48 @@ body{
 }
 .seemore{
 
+}
+
+/* ANIMATIONS */
+
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+@keyframes slideInFromRight{
+    0%{
+        transform: translateX(1000%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slideDown{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(10%);
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes backgroundscroller {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 500% 500%, 400% 400%, 300% 300%, 200% 200%, 100% 100%;
+    }
 }
