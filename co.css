@@ -154,6 +154,10 @@ a:active {}
     color: white;
 }
 
+.backgroundpics{
+    block-size: 15vw;
+}
+
 .backgroundboost {}
 
 .edu {}
