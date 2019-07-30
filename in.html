@@ -4,19 +4,43 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Cody Uhi</title>
-        <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
         <link href="co.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="navbar">
-            <div class="navbarelement"><a href="in.html">Home</a></div>
-            <div class="navbarelement"><a href="background.html">Resume</a></div>
-            <div class="navbarelement"><a href="portfolio.html">Porfolio</a></div>
-            <div class="navbarelement"><a href="hobbies.html">Hobbies</a></div>
-            <div class="navbarelement"><a href="contact.html">Contact</a></div>
-        </div>
+
+        <!-- This is the beginning of the responsive navbar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="in.html">CU</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="in.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="background.html">Resume</a>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Github <span class="glyphicon glyphicon-leaf"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- This is the end of the responsive navbar -->
+        
         <!-- This div is for the catchphrase/introduction section -->
         <div class="section" id="catchphrase">
             <h1 class="backgroundboost">
@@ -196,5 +220,6 @@
             <p>LinkedIn Link</p>
             <p>Email Link</p>
         </div>
+        <script src="ja.js"></script>
     </body>
 </html>
