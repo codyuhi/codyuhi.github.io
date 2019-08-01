@@ -11,6 +11,7 @@ body {
     /* Set the default background-color
     to be a light black color */
     background-image: url("bg2.jpeg");
+    max-width: 100%;
     background-size: auto 100%;
     background-repeat: repeat;
     background-attachment: fixed;
