@@ -10,7 +10,7 @@ body {
     margin-bottom: -10px;
     /* Set the default background-color
     to be a light black color */
-    background-image: url("bg.jpeg");
+    background-image: url("bg2.jpeg");
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -115,9 +115,45 @@ a:active {}
     color: gainsboro;
 }
 
-#relevantedu {}
+#edu {
+    background-color: white;
 
-#irrelevantedu {}
+    text-align: center;
+    width: 100%;
+    color: #333;
+    padding-bottom: 20vw;
+}
+#edu.animate img{
+    animation: fadeIn 5s forwards;
+}
+
+#eduintro {
+    padding-top: 2vw;
+}
+
+#relevantedu {
+    /* background-color: blue; */
+    font-size: 1vw;
+}
+
+#irrelevantedu {
+    /* background-color: green; */
+    font-size: 1vw;
+}
+
+#eduButton {
+    /* width: 100%; */
+    color: white;
+    background-color: #2a59e0;
+    border: #2a59e0 1px;
+    font-size: 1vw;
+    float: center;
+    padding: 1vw;
+}
+
+#eduButton:hover {
+    background-color: lightblue;
+}
 
 #idprojects {
     /* Set the background color to be a 
@@ -145,7 +181,7 @@ a:active {}
 .section {
     /* Pad section content so it doesn't run right
     along the edges of the page */
-    padding-top: 15vw;
+    padding-top: 11vw;
     padding-bottom: 15vw;
     padding-left: 2.5vw;
     padding-right: 2.5vw;
@@ -154,13 +190,37 @@ a:active {}
     color: white;
 }
 
-.backgroundpics{
+.backgroundpics {
     block-size: 15vw;
 }
 
 .backgroundboost {}
 
-.edu {}
+.education {
+    transition: height .5s;
+    display: inline-block;
+    height: 20vw;
+    width: 30%;
+    /* margin: auto; */
+    padding-top: 5vw;
+    vertical-align: top;
+    opacity: 1;
+    /* border: 1px solid #ccc; */
+
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0, 2, 1, 1);
+}
+
+.education.closed {
+    max-height: 0px;
+    opacity: 0;
+    padding-top: 0vw;
+}
+
+.edupics {
+    height: 15vw;
+}
 
 .background {}
 
