@@ -15,7 +15,10 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
-    background-position: right top;
+    background-position: left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     /* Set the default font size to be 3 * the viewport value */
     font-size: 3vw;
     /* Disable the horizontal scrollbar */
@@ -193,7 +196,7 @@ a:active {}
     text-align: center;
 }
 
-#copyright{
+#copyright {
     text-align: center;
     font-size: 2vw;
     background-color: white;
