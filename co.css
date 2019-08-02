@@ -117,14 +117,21 @@ a:active {}
 }
 
 #edu {
+    /* background-color: white; */
     background-color: white;
+    background-image: url("mountain.png");
+    max-width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 
     text-align: center;
     width: 100%;
     color: #333;
     padding-bottom: 20vw;
 }
-#edu.animate img{
+
+#edu.animate img {
     animation: fadeIn 5s forwards;
 }
 
@@ -156,6 +163,10 @@ a:active {}
     background-color: lightblue;
 }
 
+#mountain {
+    width: 100%;
+}
+
 #idprojects {
     /* Set the background color to be a 
     gray color for the projects section */
@@ -174,6 +185,20 @@ a:active {}
     /* Set the text color to be a light black
     in the contact section */
     color: #333;
+
+    padding-bottom: 1vw;
+}
+
+#contactlabel {
+    text-align: center;
+}
+
+#copyright{
+    text-align: center;
+    font-size: 2vw;
+    background-color: white;
+    padding-top: 15vw;
+
 }
 
 /* CLASSES */
@@ -226,6 +251,16 @@ a:active {}
 .background {}
 
 .seemore {}
+
+.contacticon {
+    display: inline-block;
+    width: 20%;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    position: relative;
+}
 
 /* ANIMATIONS */
 
