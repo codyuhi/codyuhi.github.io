@@ -1,4 +1,8 @@
 /* GLOBALS */
+html{
+    height: 100%;
+    width: 100%;
+}
 body {
     /* This group of CSS attributes
     Allows the entirety of the screen
