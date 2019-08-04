@@ -309,7 +309,7 @@ a:active {} */
 .hiddenbox{
     background: rgb(204, 204, 204);
     /* Fallback for older browsers without RGBA-support */
-    background: rgba(204, 204, 204, 0.5);
+    background: rgba(204, 204, 204, 0.65);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
