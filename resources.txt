@@ -1,0 +1,45 @@
+This is a list of resources for the work portion of the site:
+
+Vivint Resources:
+Vivint Web site
+https://www.vivint.com/
+-Lead network troubleshooting for smart home IoT systems
+-Train technicians regarding wireless networking principles using Verizon, ATT, WiFi, Z-wave, and 345 MHz RF technologies.
+-Design web scraping and survey tools to improve department efficiency using Javascript, JQuery, HTML5, CSS3
+-Produce reactive code that is compatible with AJAX activity to manipulate and reformat data
+-Develop Data Science scripts using Python3 and Bash to streamline data processing tasks
+-Leverage browser developer consoles to analyze DOM events and site network traffic to inform department best practices
+
+Army Resources:
+Army Job Description
+https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories/computers-and-technology/signal-support-systems-specialist.html
+-Install and maintain radio and data distribution systems
+-Communicate effectively as combat radio operator
+-Design and implement communication solutions such as local area IP networks and RF signal networks
+-Utilize mastery of subnetting, the OSI model, RF signal principles, router/switch configuration, and network terminal commands to support communications
+-Accomplish mission objectives as a member of a team in high-stress situations
+
+MTC Resources:
+MTC Web site
+https://www.mtc.byu.edu/
+-Design new Tagalog Language training materials for Philippines-bound church representatives
+-Facilitate learning as a teacher in classroom environment
+-Collaborate with Training Centers in Manila to validate curriculum
+-Scout for potential English-Speaking Filipino talent as a language evaluator
+
+Alder Resources:
+Alder Web Site
+https://www.alder.com/
+
+Jordan River Temple:
+Temple Web Site
+https://www.jordanrivertemple.com/
+
+Merit Medical Systems:
+Merit Web Site
+https://www.merit.com/
+
+LDS Philanthropies:
+LDSP Web Site
+https://www.ldsphilanthropies.org/
+
