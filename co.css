@@ -35,12 +35,12 @@ body {
     animation-direction: normal;
 }
 
-a {
+a.navbb {
     font-family: "Verdana";
     font-size: .5em;
     text-decoration: none;
 }
-
+/*
 a:link {
     color: #ADD8E6;
 }
@@ -53,7 +53,7 @@ a:hover {
     color: #E0FFFF;
 }
 
-a:active {}
+a:active {} */
 
 /* ID'S */
 
@@ -115,12 +115,21 @@ a:active {}
     z-index: 2;
 }
 
-#idbackground {
+#idwork {
     /* Set the background color to be
     a tan color for the background section */
     /* background-color: #dcc089; */
-    background-color: #333;
-    color: gainsboro;
+    /* background-color: white; */
+    background-image: url("2.jpeg");
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: #333;
 }
 
 #edu {
@@ -174,6 +183,15 @@ a:active {}
     width: 100%;
 }
 
+#workButton{
+    color: white;
+    background-color: #2a59e0;
+    border: #2a59e0 1px;
+    font-size: 1vw;
+    float: center;
+    padding: 1vw;
+}
+
 #idprojects {
     /* Set the background color to be a 
     gray color for the projects section */
@@ -223,10 +241,6 @@ a:active {}
     color: white;
 }
 
-.backgroundpics {
-    block-size: 15vw;
-}
-
 .backgroundboost {}
 
 .education {
@@ -255,9 +269,59 @@ a:active {}
     height: 15vw;
 }
 
-.background {}
+.center{
+    text-align:center;
+}
 
-.seemore {}
+.work {
+    /* text-align:center; */
+    max-width: 75%;
+    font-size: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    /* background-color: white; */
+    padding-bottom:5vw;
+    
+}
+.workpics {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    display:inline-block;
+}
+.ppp{
+    display:inline-block;
+    padding-right: 2vw;
+    width:35%;
+}
+.worktext{
+    display:inline-block;
+    vertical-align: top;
+    font-size: 1vw;
+    width: 50%;
+    opacity: 1;
+}
+.work.worktext.text{
+    /* text-align:right; */
+    opacity: 1;
+}
+.hiddenbox{
+    background: rgb(204, 204, 204);
+    /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.seemore {
+    text-align: center;
+    font-size: 2vw;
+    padding-bottom: 2vw;
+}
 
 .contacticon {
     display: inline-block;
