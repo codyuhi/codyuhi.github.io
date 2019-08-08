@@ -1,8 +1,9 @@
 /* GLOBALS */
-html{
+html {
     height: 100%;
     width: 100%;
 }
+
 body {
     /* This group of CSS attributes
     Allows the entirety of the screen
@@ -40,6 +41,7 @@ a.navbb {
     font-size: .5em;
     text-decoration: none;
 }
+
 /*
 a:link {
     color: #ADD8E6;
@@ -183,7 +185,7 @@ a:active {} */
     width: 100%;
 }
 
-#workButton{
+#workButton {
     color: white;
     background-color: #2a59e0;
     border: #2a59e0 1px;
@@ -192,13 +194,30 @@ a:active {} */
     padding: 1vw;
 }
 
-#idprojects {
+#skillsid {
     /* Set the background color to be a 
     gray color for the projects section */
 
     /* Set the text color to be a light black
     in the projects section */
     /* color: #333; */
+    width: 100%;
+    text-align: center;
+    padding-top: 2vw;
+}
+
+#skillButton {
+    /* width: 100%; */
+    color: white;
+    background-color: #2a59e0;
+    border: #2a59e0 1px;
+    font-size: 1vw;
+    float: center;
+    padding: 1vw;
+}
+
+#skillButton:hover {
+    background-color: lightblue;
 }
 
 #idhobbies {}
@@ -269,8 +288,8 @@ a:active {} */
     height: 15vw;
 }
 
-.center{
-    text-align:center;
+.center {
+    text-align: center;
 }
 
 .work {
@@ -281,32 +300,37 @@ a:active {} */
     margin-right: auto;
     float: none;
     /* background-color: white; */
-    padding-bottom:5vw;
-    
+    padding-bottom: 5vw;
+
 }
+
 .workpics {
     width: 100%;
     height: auto;
     vertical-align: top;
-    display:inline-block;
+    display: inline-block;
 }
-.ppp{
-    display:inline-block;
+
+.ppp {
+    display: inline-block;
     padding-right: 2vw;
-    width:35%;
+    width: 35%;
 }
-.worktext{
-    display:inline-block;
+
+.worktext {
+    display: inline-block;
     vertical-align: top;
     font-size: 1vw;
     width: 50%;
     opacity: 1;
 }
-.work.worktext.text{
+
+.work.worktext.text {
     /* text-align:right; */
     opacity: 1;
 }
-.hiddenbox{
+
+.hiddenbox {
     background: rgb(204, 204, 204);
     /* Fallback for older browsers without RGBA-support */
     background: rgba(204, 204, 204, 0.65);
@@ -317,10 +341,33 @@ a:active {} */
     padding-bottom: 2vw;
 }
 
+.hiddenbox.skills, .hiddenbox.seemore {
+    background: rgb(204, 204, 204);
+    /* Fallback for older browsers without RGBA-support */
+    background: rgba(17, 17, 17, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
 .seemore {
     text-align: center;
     font-size: 2vw;
     padding-bottom: 2vw;
+}
+
+.skills {
+    width: 30%;
+    text-align: center;
+    font-size: .5em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.skillpics {
+    height: 9em;
+    vertical-align: top;
 }
 
 .contacticon {
