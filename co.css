@@ -193,6 +193,9 @@ a:active {} */
     float: center;
     padding: 1vw;
 }
+#workButton:hover {
+    background-color: lightblue;
+}
 
 #skillsid {
     /* Set the background color to be a 
@@ -219,6 +222,19 @@ a:active {} */
 #skillButton:hover {
     background-color: lightblue;
 }
+#hobbyButton {
+    /* width: 100%; */
+    color: white;
+    background-color: #2a59e0;
+    border: #2a59e0 1px;
+    font-size: 1vw;
+    float: center;
+    padding: 1vw;
+}
+
+#hobbyButton:hover {
+    background-color: lightblue;
+}
 
 #idhobbies {
     background-color:#001f3f;
@@ -232,6 +248,11 @@ a:active {} */
     in the contact section */
     color: #333;
 
+    padding-bottom: 1vw;
+}
+
+#contactPage{
+    color:white;
     padding-bottom: 1vw;
 }
 
