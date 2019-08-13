@@ -1,65 +1,276 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--Favicon reference:-->
-    <!--link rel="icon" href="../../../../favicon.ico"-->
-    <title>Cody Uhi's Cover Page</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-    
-  </head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Cody Uhi</title>
+        <link href="co.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel=icon href="favicon.ico">
+    </head>
+    <body>
 
-  <body onload="mobileRedirect()">
-    <!-- <div class="cpBoundaries"><p>test</p></div> -->
-    <div class="catchphrase">
-      <!-- <img src="banner.png" id="banner"> -->
-      <h1 id="cp1">
-          Cody's the name,
-      </h1>
-      <h1 id="cp2">
-        Coding's my game.
-      </h1>
-      <br><br>
-    </div>
-    <!-- <p>test0</p> -->
-    <div class="platBack">
-      <div class="spt">
-        <!-- <img src="lineDivider.png" id="ld"> -->
-        <p>test1</p>
-        <p>test1</p>
-        <p>test1</p>
-        <p>test1</p>
-        <p>test1</p>
-      </div>
-      <div class="spt">
-        <img src="1.png" id="sp">
-      </div>
-      <div class="spt">
-        <p>test3</p>
-        <p>test3</p>
-        <p>test3</p>
-        <p>test3</p>
-        <p>test3</p>
-        <p>test3</p>
-      </div>
-    </div>
-    
-    <br>
-    
-    <!--img src="4.jpeg"-->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="cover.js"></script>
-  </body>
+        <!-- This is the beginning of the responsive navbar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navbb" href="in.html">CU</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="navbb" href="in.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a class="navbb" href="background.html"><span class="glyphicon glyphicon-briefcase"></span> Resume</a></li>
+                        <li><a class="navbb" href="portfolio.html"><span class="glyphicon glyphicon-education"></span> Portfolio</a></li>
+                        <li><a class="navbb" href="hobbies.html"><span class="glyphicon glyphicon-ice-lolly-tasted"></span> Hobbies</a></li>
+                        <li><a class="navbb" href="contact.html"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="navbb" href="https://github.com/codyuhi">Github <span class="glyphicon glyphicon-leaf"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- This is the end of the responsive navbar -->
+        
+        <!-- This div is for the catchphrase/introduction section -->
+        <div class="section" id="catchphrase">
+            <h1 class="backgroundboost">
+                <div id="cp1">Cody's the name,<br></div>
+                <div id="cp2">Coding's my game.</div>
+            </h1>
+            <div class="backgroundboost">
+                <div id="name" class="backgroundboost">Cody Uhi<br></div>
+                <div id="description">Student  |  Software Developer  |  Network Specialist</div>
+            </div>
+            <img src="1.png" id="cpimage">
+        </div>
+        <!-- This div is for my background timeline -->
+        <div class="section animate" id="edu">
+            <h1>Education</h1>
+            <div class="education">
+                <div><a href="http://dev.byu.edu"><img src=" byuDev.jpeg" class="edupics"></a></div>
+            </div>
+            <div class="education">
+                <div><a href="https://byu.edu/about"><img src="byu.jpg" class="edupics"></a></div>
+            </div>
+            <div class="education">
+                <div><a href="https://cybersecurity.byu.edu/index.html"><img src=" itsec.png" class="edupics"></a></div>
+            </div>
+            <div id="eduintro"">
+                <p>Brigham Young University<br>Provo, UT<br><br>Information Technology/Cybersecurity Major<br><br>Graduation: April, 2021</p>
+            </div>
+            <div style="width:100%;">
+                <button id="eduButton" onclick="expandEdu()">See Course History</button>
+            </div>
+            <div class="education closed" id="relevantedu">
+                <h2><u>Technical Courses:</u></h2>
+                <p class="edu">IT&C 347 - Computer Networks</p>
+                <p class="edu">IT&C 344 - Operating Systems</p>
+                <p class="edu">IT&C 327 - Digital Communications</p>
+                <p class="edu">IT&C 255 - Human-Computer Interaction</p>
+                <p class="edu">IT 252 - Computer Architecture</p>
+                <p class="edu">IT 210 - Web-Based Technologies</p>
+                <p class="edu">CS 236 - Discrete Mathematics</p>
+                <p class="edu">CS 235 - Data Structures</p>
+                <p class="edu">CS 224 - Computer systems</p>
+                <p class="edu">TECH 112 - Innovation</p>
+                <p class="edu">CS 124 - Intro to Computer Programming</p>
+            </div>
+            <div class="education closed" id="irrelevantedu">
+                <h2><u>Background Deepening Courses:</u></h2>
+                <p class="edu">ECON 110 - Economic Principles & Problems</p>
+                <p class="edu">ENGL 316 - Technical Writing</p>
+                <p class="edu">STAT 121 - Statistics</p>
+                <p class="edu">MATH 112 - Calculus</p>
+                <p class="edu">MATH 116 - Essentials of Calculus</p>
+                <p class="edu">MATH 110 - Algebra</p>
+                <p class="edu">PHSCS 121 - Intro to Newtonian Mechanics</p>
+                <p class="edu">PHSCS 105 - Intro to Physics</p>
+                <p class="edu">MFG 130 - Lean Manufacturing</p>
+                <p class="edu">And More!</p>
+            </div>
+            <!-- <img src="mountain.png" id="mountain"> -->
+        </div>
+        <div class="section" id="idwork">
+            <div class="hiddenbox">
+                <h1 class="center">Work Experience:</h1>
+                <div class="work">
+                    <div class="ppp">
+                        <img src="usg.png" class="workpics">
+                    </div>
+                    <div class="worktext">
+                        <h2>Cyber Operations Officer Intern - USG</h2>
+                        <p>June 2019 - Present</p>
+                        <ul>
+                            <li><a href="contact.html">Contact me</a> for more information</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="ppp">
+                        <img src="vivint.png" class="workpics">
+                    </div>
+                    <div class="worktext text ">
+                        <h2>Network Specialist - <a href="https://www.vivint.com/">Vivint SmartHome</a></h2>
+                        <p>November 2016 - Present</p>
+                        <ul>
+                            <li>-Lead network troubleshooting for smart home IoT systems</li>
+                            <li>-Train technicians regarding wireless networking principles using Verizon, ATT, WiFi,
+                                Z-wave, and 345 MHz RF
+                                technologies.</li>
+                            <li>-Design web scraping and survey tools to improve department efficiency using Javascript,
+                                JQuery, HTML5, CSS3
+                            </li>
+                            <li>-Produce reactive code that is compatible with AJAX activity to manipulate and reformat
+                                data</li>
+                            <li>-Develop Data Science scripts using Python3 and Bash to streamline data processing tasks
+                            </li>
+                            <li>-Leverage browser developer consoles to analyze DOM events and site network traffic to
+                                inform department best
+                                practices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="ppp">
+                        <a href="https://www.youtube.com/watch?v=AIW1EVgdhn4"><img src="army.png" class="workpics"></a>
+                    </div>
+                    <div class="worktext">
+                        <h2>25U (Signal Support System Specialist) <br>SPC - <a
+                                href="https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories/computers-and-technology/signal-support-systems-specialist.html">US
+                                Army Signal Corps</a></h2>
+                        <p>September 2017 - Present</p>
+                        <ul>
+                            <li>-Install and maintain radio and data distribution systems</li>
+                            <li>-Communicate effectively as combat radio operator</li>
+                            <li>-Design and implement communication solutions such as local area IP networks and RF
+                                signal networks</li>
+                            <li>-Utilize mastery of subnetting, the OSI model, RF signal principles, router/switch
+                                configuration, and network
+                                terminal commands to support communications</li>
+                            <li>-Accomplish mission objectives as a member of a team in high-stress situations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="ppp">
+                        <img src="mtc.PNG" class="workpics">
+                    </div>
+                    <div class="worktext">
+                        <h2>Language Training Specialist - <a href="https://www.mtc.byu.edu/">MTC (Provo)</a></h2>
+                        <p>August 2015 - October 2017</p>
+                        <ul>
+                            <li>-Design new Tagalog Language training materials for Philippines-bound church
+                                representatives</li>
+                            <li>-Facilitate learning as a teacher in classroom environment</li>
+                            <li>-Collaborate with Training Centers in Manila to validate curriculum</li>
+                            <li>-Scout for potential English-Speaking Filipino talent as a language evaluator</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="seemore">
+                    <h2>See more</h2>
+                    <p>I only included the most relevant information here.<br></p>
+                    <button id="workButton" onclick="location.replace('contact.html')">Click here to see everything else</button>
+                </div>
+            </div>
+        </div>
+        <!-- This div is for explaining my projects that I have worked on -->
+        <div class="section" id="idprojects">
+        <h1 class="center">My Skills:</h1>
+        <div id="skillsid">
+            <div class="skills hiddenbox">
+                <img src="softdev2.png" class="skillpics">
+                <h2>Software Engineering / Computer Science</h2>
+                <p>Python</p>
+                <p>C++</p>
+                <p>C</p>
+                <p>C#</p>
+                <p>Bash & Powershell</p>
+                <p>x86 ISA</p>
+            </div>
+            <div class="skills hiddenbox">
+                <img src="webdev.png" class="skillpics">
+                <h2>Web Development / Information Technology</h2>
+                <p>HTML, CSS, JS</p>
+                <p>NodeJS</p>
+                <p>JQuery</p>
+                <p>PHP & MySQL</p>
+                <p>Windows Server, AWS, & Apache</p>
+                <p>Network Engineering</p>
+            </div>
+                <div class="skills hiddenbox">
+                    <img src="kali2.png" class="skillpics">
+                    <h2>Cyber Security / Penetration Testing</h2>
+                    <p>Kali Linux</p>
+                    <p>Metasploit Suite</p>
+                    <p>Buffer Overflow</p>
+                    <p>XSS</p>
+                    <p>SQL Injection</p>
+                    <p>CTF Experience</p>
+                </div>
+            </div>
+            <div class="seemore">
+                <h2>See More</h2>
+                <p>Want to see what I've done with these technologies?</p>
+                <button id="skillButton" onclick="location.replace('portfolio.html')">Click here to check it out</button>
+            </div>
+        </div>
+        <!-- This is the div where I describe my hobbies and interests -->
+        <div class="section" id="idhobbies">
+            <h1 class="center">Hobbies and Interests:</h1>
+            <div>
+                <h1>Tech Challenges/Puzzles</h1>
+                <div>
+                    <h2>Hackerrank Coding Challenges</h2>
+                </div>
+                <div>
+                    <h2>Leetcode Coding Challenges</h2>
+                </div>
+                <div>
+                    <h2>Capture the Flag Challenges</h2>
+                </div>
+            </div>
+            <div>
+                <h1>Studying Languages</h1>
+                <div>
+                    <h2>Tagalog</h2>
+                </div>
+                <div>
+                    <h2>Spanish</h2>
+                </div>
+                <div>
+                    <h2>Japanese</h2>
+                </div>
+            </div>
+            <div class="seemore">
+                <h2>See More</h2>
+                <p>Interested in learning more? Click <a href="hobbies.html">here</a> to learn more about what I'm all about</p>
+            </div>
+        </div>
+        <!-- This is the div for contact information and links -->
+        <div class="section" id="contact">
+            <div id="contactlabel">
+                <div>
+                    <h1>Contact Me:</h1>
+                </div>
+                    <a target="_blank" href="https://www.facebook.com/cody.uhi"><img src="fb.png"class="contacticon"></a>
+                    <a target="_blank" href="https://www.instagram.com/uhicody/"><img src="ig.png"class="contacticon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/cody-u-b984b8117/"><img src="li.png"class="contacticon"></a>
+                    <a href="mailto:codyuhi@protonmail.com"><img src="em.png"class="contacticon"></a>
+                </div>
+                <p id="copyright">&#169 Cody Uhi 2019</p>
+            </div>
+            
+        </div>
+        <script src="ja.js"></script>
+    </body>
 </html>
