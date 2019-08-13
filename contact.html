@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact Cody Uhi</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Contact Me</title>
+        <link href="co.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel=icon href="favicon.ico">
     </head>
     <body>
-        <h1>This is the contact page</h1>
-        <p>Click <a href="in.html">here</a> to return to the cover page</p>
+        <!-- This is the beginning of the responsive navbar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navbb" href="index.html">CU</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="navbb"><a class="navbb" href="index.html"><span
+                                    class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a class="navbb" href="background.html"><span class="glyphicon glyphicon-briefcase"></span>
+                                Resume</a></li>
+                        <li><a class="navbb" href="portfolio.html"><span class="glyphicon glyphicon-education"></span>
+                                Portfolio</a></li>
+                        <li><a class="navbb" href="hobbies.html"><span
+                                    class="glyphicon glyphicon-ice-lolly-tasted"></span> Hobbies</a></li>
+                        <li class="active"><a class="navbb" href="contact.html"><span class="glyphicon glyphicon-user"></span>
+                                Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="navbb" href="https://github.com/codyuhi">Github <span
+                                    class="glyphicon glyphicon-leaf"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- This is the end of the responsive navbar -->
+        <div class="section" id="contactPage">
+            <div id="contactlabel">
+                <div>
+                    <h1>Contact Me:</h1>
+                    <p>Please reach out to me by clicking an icon below:</p>
+                </div>
+                <a target="_blank" href="https://www.facebook.com/cody.uhi"><img src="fb.png" class="contacticon"></a>
+                <a target="_blank" href="https://www.instagram.com/uhicody/"><img src="ig.png" class="contacticon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/cody-u-b984b8117/"><img src="li.png"
+                        class="contacticon"></a>
+                <a href="mailto:codyuhi@protonmail.com"><img src="em.png" class="contacticon"></a>
+            </div>
+            <p class="center">&#169 Cody Uhi 2019</p>
+        </div>
+
+        </div>
     </body>
 </html>
