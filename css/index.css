@@ -278,7 +278,7 @@ a:active {} */
     /* Set the text color to be a light black
     in the contact section */
     color: #333;
-
+    padding-top: 1vw !important;
     padding-bottom: 1vw;
 }
 
