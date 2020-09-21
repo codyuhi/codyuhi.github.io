@@ -36,10 +36,21 @@ body {
     animation-direction: normal;
 }
 
+.navbar {
+    position: fixed !important;
+    top: 0px;
+    width: 100%;
+    z-index: 5;
+}
+
 a.navbb {
     font-family: "Verdana";
     font-size: .5em;
     text-decoration: none;
+}
+
+.hobbylinks {
+    color: coral;
 }
 
 /*
@@ -157,9 +168,14 @@ a:active {} */
     padding-top: 2vw;
 }
 
+#clubinfo {
+    font-size: 2vw;
+}
+
 #relevantedu {
     /* background-color: blue; */
     font-size: 1vw;
+    width: 60%;
 }
 
 #irrelevantedu {
@@ -237,7 +253,22 @@ a:active {} */
 }
 
 #idhobbies {
-    background-color:#001f3f;
+    float: left;
+    /* background-color:#001f3f; */
+    background-image: url("../img/slc.jpg");
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    animation-name: backgroundscroller;
+    animation-duration: 400s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 
 #contact {
@@ -285,6 +316,16 @@ a:active {} */
 
 .backgroundboost {}
 
+.backgroundsummary > li {
+    font-size: 1vw;
+    z-index: 3;
+    margin-left: 4vw;
+    margin-top: .75vw;
+    opacity: 0;
+    animation: 2s ease-in-out 5s 1 fadeIn;
+    animation-fill-mode: forwards;
+}
+
 .education {
     transition: height .5s;
     display: inline-block;
@@ -305,6 +346,11 @@ a:active {} */
     max-height: 0px;
     opacity: 0;
     padding-top: 0vw;
+}
+
+.education-sub {
+    float: left;
+    width: 50%;
 }
 
 .edupics {
@@ -391,6 +437,57 @@ a:active {} */
 .skillpics {
     height: 9em;
     vertical-align: top;
+}
+
+.hobbyrow1 {
+    float: left;
+}
+
+.hobbyrow2 {
+    float: left;
+}
+
+.hobbycolumn1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 40%;
+    float: left;
+}
+
+.hobbycolumn2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 40%;
+    float: left;
+}
+
+.hobbybox {
+    background: rgb(204, 204, 204);
+    /* Fallback for older browsers without RGBA-support */
+    background: rgba(17, 17, 17, 0.5);
+    padding-bottom: 2vw;
+}
+
+.hobbytitle {
+    padding-top: 2vw;
+    text-align: center;
+}
+
+.hobbyinfo {
+    font-size: 1.5vw;
+}
+
+.hobbyinfo > li {
+    margin-top: 1.5vw;
+}
+
+.hobbyinfolist {
+    list-style-type: disc;
+    margin-right: 2vw;
+}
+
+.hobbyinfolist > li {
+    margin-top: 1vw;
 }
 
 .contacticon {

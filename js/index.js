@@ -19,6 +19,36 @@ function expandEdu(){
     }
 }
 
+function clickHome() {
+    $(".active").removeClass("active");
+    $("#homeNav").addClass("active");
+}
+
+function clickEdu() {
+    $(".active").removeClass("active");
+    $("#eduNav").addClass("active");
+}
+
+function clickExperience() {
+    $(".active").removeClass("active");
+    $("#experienceNav").addClass("active");
+}
+
+function clickSkills() {
+    $(".active").removeClass("active");
+    $("#skillsNav").addClass("active");
+}
+
+function clickHobbies() {
+    $(".active").removeClass("active");
+    $("#hobbiesNav").addClass("active");
+}
+
+function clickContact() {
+    $(".active").removeClass("active");
+    $("#contactNav").addClass("active");
+}
+
 $(window).on('scroll', function (e) {
     var top = $(window).scrollTop() + $(window).height(),
         isVisible = top > $('#edu img').offset().top;

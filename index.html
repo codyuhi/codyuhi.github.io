@@ -26,11 +26,13 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a class="navbb" href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                        <li><a class="navbb" href="experience.html"><span class="glyphicon glyphicon-briefcase"></span> Experience</a></li>
-                        <li><a class="navbb" href="portfolio.html"><span class="glyphicon glyphicon-education"></span> Portfolio</a></li>
-                        <li><a class="navbb" href="hobbies.html"><span class="glyphicon glyphicon-ice-lolly-tasted"></span> Hobbies</a></li>
-                        <li><a class="navbb" href="contact.html"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+                        <li id="homeNav" class="active" onclick="clickHome()"><a class="navbb" href="#top"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li id="eduNav" onclick="clickEdu()"><a class="navbb" href="#edu"><span class="glyphicon glyphicon-education"></span> Education</a></li>
+                        <li id="experienceNav" onclick="clickExperience()"><a class="navbb" href="#idwork"><span class="glyphicon glyphicon-briefcase"></span> Experience</a></li>
+                        <li id="skillsNav" onclick="clickSkills()"><a class="navbb" href="#idprojects"><span class="glyphicon glyphicon-fire"></span> Skills</a></li>
+                        <li id="hobbiesNav" onclick="clickHobbies()"><a class="navbb" href="#idhobbies"><span class="glyphicon glyphicon-ice-lolly-tasted"></span> Hobbies</a></li>
+                        <li id="contactNav" onclick="clickContact()"><a class="navbb" href="#contact"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+                        <li id="resumeNav"><a class="navbb" href="CodyUhiResumeFall2020.pdf"><span class="glyphicon glyphicon-list-alt"></span> Resume</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="navbb" href="https://github.com/codyuhi">Github <span class="glyphicon glyphicon-leaf"></span></a></li>
@@ -48,7 +50,15 @@
             </h1>
             <div class="backgroundboost">
                 <div id="name" class="backgroundboost">Cody Uhi<br></div>
-                <div id="description">Student  |  Software Developer  |  Network Specialist</div>
+                <div id="description">Student  |  Full-Stack Software Engineer  |  QA Engineer</div>
+            </div>
+            <div class="backgroundboost">
+                <ul class="backgroundsummary">
+                    <li>Senior in Brigham Young University's IT Program</li>
+                    <li>Software QA Engineer - Full-time at Vivint Smart Home</li>
+                    <li>Seeking Full-Stack Software Engineering Position post graduation (April 2021)</li>
+                    <li><a style="color: lightcoral" href="CodyUhiResumeFall2020.pdf"><u><strong>Click Here</strong></u></a> to see my resume</li>
+                </ul>
             </div>
             <img src="img/face.png" id="cpimage">
         </div>
@@ -62,27 +72,43 @@
                 <div><a href="https://byu.edu/about"><img src="img/byu.jpg" class="edupics"></a></div>
             </div>
             <div class="education">
-                <div><a href="https://cybersecurity.byu.edu/index.html"><img src="img/itsec.png" class="edupics"></a></div>
+                <div><a href="https://www.facebook.com/byuitsec"><img src="img/itsec.png" class="edupics"></a></div>
             </div>
-            <div id="eduintro"">
-                <p>Brigham Young University<br>Provo, UT<br><br>Information Technology/Cybersecurity Major<br><br>Graduation: April, 2021</p>
+            <div id="eduintro">
+                <p>Brigham Young University<br>Provo, UT<br><br>Information Technology Major | Computer Science Minor<br><br>Graduation: April, 2021</p>
+            </div>
+            <div id="clubinfo">
+                <p><a href="https://itc.byu.edu/">BYU IT Student Association</a> Vice President</p>
+                <p><a href="https://dev.byu.edu">BYU Dev Club</a> Member</p>
+                <p><a href="https://www.facebook.com/byuitsec">BYU Cybersecurity Association</a> Member</p>
+                <p>Major GPA: 3.42</p>
             </div>
             <div style="width:100%;">
                 <button id="eduButton" onclick="expandEdu()">See Course History</button>
             </div>
             <div class="education closed" id="relevantedu">
                 <h2><u>Technical Courses:</u></h2>
-                <p class="edu">IT&C 347 - Computer Networks</p>
-                <p class="edu">IT&C 344 - Operating Systems</p>
-                <p class="edu">IT&C 327 - Digital Communications</p>
-                <p class="edu">IT&C 255 - Human-Computer Interaction</p>
-                <p class="edu">IT 252 - Computer Architecture</p>
-                <p class="edu">IT 210 - Web-Based Technologies</p>
-                <p class="edu">CS 236 - Discrete Mathematics</p>
-                <p class="edu">CS 235 - Data Structures</p>
-                <p class="edu">CS 224 - Computer systems</p>
-                <p class="edu">TECH 112 - Innovation</p>
-                <p class="edu">CS 124 - Intro to Computer Programming</p>
+                <div class="education-sub">
+                    <p class="edu">IT&C 327 - Digital Communications</p>
+                    <p class="edu">IT&C 255 - Human-Computer Interaction</p>
+                    <p class="edu">IT 252 - Computer Architecture</p>
+                    <p class="edu">IT 210 - Web-Based Technologies</p>
+                    <p class="edu">CS 236 - Discrete Mathematics</p>
+                    <p class="edu">CS 235 - Data Structures</p>
+                    <p class="edu">CS 224 - Computer systems</p>
+                    <p class="edu">TECH 112 - Innovation</p>
+                    <p class="edu">CS 124 - Intro to Computer Programming</p>
+                </div>
+                <div class="education-sub">
+                    <p class="edu">IT&C 231 - Ethics in Technology</p>
+                    <p class="edu">IT&C 555 - Advanced Human-Computer Interaction</p>
+                    <p class="edu">IT&C 492 - Mobile Application Development</p>
+                    <p class="edu">CS 240 - Advanced Programming Concepts</p>
+                    <p class="edu">IT&C 366 - Information Assurance & Security</p>
+                    <p class="edu">IT&C 350 - Database Principles & Applications</p>
+                    <p class="edu">IT&C 347 - Computer Networks</p>
+                    <p class="edu">IT&C 344 - Operating Systems</p>
+                </div>
             </div>
             <div class="education closed" id="irrelevantedu">
                 <h2><u>Background Deepening Courses:</u></h2>
@@ -104,13 +130,30 @@
                 <h1 class="center">Work Experience:</h1>
                 <div class="work">
                     <div class="ppp">
-                        <img src="img/usg.png" class="workpics">
+                        <img src="img/vivint.png" class="workpics">
                     </div>
-                    <div class="worktext">
-                        <h2>Cyber Operations Officer Intern - USG</h2>
-                        <p>June 2019 - Present</p>
+                    <div class="worktext text ">
+                        <h2>Software QA Engineer - <a href="https://www.vivint.com/">Vivint Smart Home</a></h2>
+                        <p>September 2020 - Present</p>
                         <ul>
-                            <li><a href="contact.html">Contact me</a> for more information</li>
+                            <li>Create detailed, comprehensive and well-structured test plans and test cases (both manual and automated)</li>
+                            <li>Estimate, prioritize, plan, and coordinate testing activities</li>
+                            <li>Execute regression test runs</li>
+                            <li>Play an integral role in the Agile software development life cycle</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="ppp">
+                        <img src="img/inst.png" class="workpics">
+                    </div>
+                    <div class="worktext text ">
+                        <h2>Full-Stack Software Engineer Intern - <a href="https://www.instructure.com/">Instructure</a></h2>
+                        <p>April 2020 - September 2020</p>
+                        <ul>
+                            <li>Construct production-ready, full-stack code using a Ruby/Rails backend and React frontend</li>
+                            <li>Work jointly with an R&D team using Shape Up software development methodologies</li>
+                            <li>Contribute to the development cycle from the design phase to QA testing and deployment</li>
                         </ul>
                     </div>
                 </div>
@@ -119,23 +162,46 @@
                         <img src="img/vivint.png" class="workpics">
                     </div>
                     <div class="worktext text ">
-                        <h2>Network Specialist - <a href="https://www.vivint.com/">Vivint SmartHome</a></h2>
-                        <p>November 2016 - Present</p>
+                        <h2>Sr. Lead, FS Technology - <a href="https://www.vivint.com/">Vivint Smart Home</a></h2>
+                        <p>November 2016 - September 2020</p>
                         <ul>
-                            <li>-Lead network troubleshooting for smart home IoT systems</li>
-                            <li>-Train technicians regarding wireless networking principles using Verizon, ATT, WiFi,
-                                Z-wave, and 345 MHz RF
-                                technologies.</li>
-                            <li>-Design web scraping and survey tools to improve department efficiency using Javascript,
+                            <li>Design web scraping and survey tools to improve department efficiency using Javascript,
                                 JQuery, HTML5, CSS3
                             </li>
-                            <li>-Produce reactive code that is compatible with AJAX activity to manipulate and reformat
+                            <li>Produce reactive code that is compatible with AJAX activity to manipulate and reformat
                                 data</li>
-                            <li>-Develop Data Science scripts using Python3 and Bash to streamline data processing tasks
+                            <li>Develop Data Science scripts using Python3 and Bash to streamline data processing tasks
                             </li>
-                            <li>-Leverage browser developer consoles to analyze DOM events and site network traffic to
+                            <li>Leverage browser developer consoles to analyze DOM events and site network traffic to
                                 inform department best
                                 practices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="ppp">
+                        <img src="img/mtc.png" class="workpics">
+                    </div>
+                    <div class="worktext">
+                        <h2>Research Assistant - <a href="https://cil.byu.edu/">BYU Crisis Informatics Lab</a></h2>
+                        <p>November 2019 - April 2020</p>
+                        <ul>
+                            <li>Build cloud infrastructure with AWS to support BYU's Crisis Informatics research platform</li>
+                            <li>Scrape and analyze large social media datasets using Network Analysis, Topic Modeling, Sentiment Analysis, Geocoding, Time and Keywords, etc.</li>
+                            <li>Implement Machine Learning models to deploy research API at scale (Python, Jupyter, Tensorflow)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="ppp">
+                        <img src="img/usg.png" class="workpics">
+                    </div>
+                    <div class="worktext">
+                        <h2>Cyber Operations Officer Intern - USG</h2>
+                        <p>June 2019 - September 2019</p>
+                        <ul>
+                            <li>Support the design and testing of office internet networks. Create documentation related to project implementations. Coordinate and engage with inter-office components</li>
+                            <li>Perform cyber analysis, technical research and investigations for digital signatures, web technologies, and social media</li>
                         </ul>
                     </div>
                 </div>
@@ -149,14 +215,14 @@
                                 Army Signal Corps</a></h2>
                         <p>September 2017 - Present</p>
                         <ul>
-                            <li>-Install and maintain radio and data distribution systems</li>
-                            <li>-Communicate effectively as combat radio operator</li>
-                            <li>-Design and implement communication solutions such as local area IP networks and RF
+                            <li>Install and maintain radio and data distribution systems</li>
+                            <li>Communicate effectively as combat radio operator</li>
+                            <li>Design and implement communication solutions such as local area IP networks and RF
                                 signal networks</li>
-                            <li>-Utilize mastery of subnetting, the OSI model, RF signal principles, router/switch
+                            <li>Utilize mastery of subnetting, the OSI model, RF signal principles, router/switch
                                 configuration, and network
                                 terminal commands to support communications</li>
-                            <li>-Accomplish mission objectives as a member of a team in high-stress situations</li>
+                            <li>Accomplish mission objectives as a member of a team in high-stress situations</li>
                         </ul>
                     </div>
                 </div>
@@ -168,19 +234,20 @@
                         <h2>Language Training Specialist - <a href="https://www.mtc.byu.edu/">MTC (Provo)</a></h2>
                         <p>August 2015 - October 2017</p>
                         <ul>
-                            <li>-Design new Tagalog Language training materials for Philippines-bound church
+                            <li>Design new Tagalog Language training materials for Philippines-bound church
                                 representatives</li>
-                            <li>-Facilitate learning as a teacher in classroom environment</li>
-                            <li>-Collaborate with Training Centers in Manila to validate curriculum</li>
-                            <li>-Scout for potential English-Speaking Filipino talent as a language evaluator</li>
+                            <li>Facilitate learning as a teacher in classroom environment</li>
+                            <li>Collaborate with Training Centers in Manila to validate curriculum</li>
+                            <li>Scout for potential English-Speaking Filipino talent as a language evaluator</li>
                         </ul>
                     </div>
                 </div>
-                <div class="seemore">
+                <!-- The button below will be used in a future version of the site -->
+                <!-- <div class="seemore">
                     <h2>See more</h2>
                     <p>I only included the most relevant information here.<br></p>
                     <button id="workButton" onclick="location.replace('experience.html')">Click here to see everything else</button>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- This div is for explaining my projects that I have worked on -->
@@ -190,6 +257,7 @@
             <div class="skills hiddenbox">
                 <img src="img/softdev2.png" class="skillpics">
                 <h2>Software Engineering / Computer Science</h2>
+                <p>Java</p>
                 <p>Python</p>
                 <p>C++</p>
                 <p>C</p>
@@ -200,6 +268,7 @@
             <div class="skills hiddenbox">
                 <img src="img/webdev.png" class="skillpics">
                 <h2>Web Development / Information Technology</h2>
+                <p>React</p>
                 <p>HTML, CSS, JS</p>
                 <p>NodeJS</p>
                 <p>JQuery</p>
@@ -215,61 +284,136 @@
                     <p>Buffer Overflow</p>
                     <p>XSS</p>
                     <p>SQL Injection</p>
+                    <p>Input Validation</p>
                     <p>CTF Experience</p>
                 </div>
             </div>
-            <div class="seemore">
+            <!-- The below section will be used in a future version of the site -->
+            <!-- <div class="seemore">
                 <h2>See More</h2>
                 <p>Want to see what I've done with these technologies?</p>
                 <button id="skillButton" onclick="location.replace('portfolio.html')">Click here to check it out</button>
-            </div>
+            </div> -->
         </div>
         <!-- This is the div where I describe my hobbies and interests -->
-        <!-- <div class="section" id="idhobbies">
+        <div class="section" id="idhobbies">
             <h1 class="center">Hobbies and Interests:</h1>
-            <div>
-                <h1>Tech Challenges/Puzzles</h1>
-                <div>
-                    <h2>Hackerrank Coding Challenges</h2>
+            <div id="hobbyrow1">
+                <div class="hobbycolumn1">
+                    <div class="hobbybox">
+                        <h3 class="hobbytitle">Mobile Development</h3>
+                        <ul class="hobbyinfo">
+                            <li>Pokedex App
+                                <ul class="hobbyinfolist">
+                                    <li>Android app used to track all the Pokemon that a user has caught</li>
+                                    <li>Uses the <a class="hobbylinks" href="https://asana.com/guide/help/api/api">Asana API</a> to store information on the backend and the <a class="hobbylinks" href="https://pokeapi.co/docs/v2">PokeAPI</a> to make sure that all Pokemon data is present and up-to-date</li>
+                                    <li>Uses Google Cloud Vision to detect whether the user's camera is pointed at a Pokemon's name written as text, then pulls up Pokemon entry if name detected</li>
+                                    <li><a class="hobbylinks" href="https://github.com/codyuhi/Pokedex2">See Repo</a></li>
+                                </ul>
+                            </li>
+                            <li>Family Map App
+                                <ul class="hobbyinfolist">
+                                    <li>Android app that maps out connections between family members on a global map</li>
+                                    <li>Allows familial relationships to be given to draw lines between family members on a Google Map</li>
+                                    <li>Track significant family events (birth, death, etc) and their locations/dates for ancestors and distant family</li>
+                                    <li><a class="hobbylinks" href="https://github.com/codyuhi/FamilyMapClient">See Client Repo</a></li>
+                                    <li><a class="hobbylinks" href="https://github.com/codyuhi/FamilyMapServer">See Server Repo</a></li>
+                                </ul>
+                            </li>
+                            <li>Online Marketplace App
+                                <ul class="hobbyinfolist">
+                                    <li>Android app for adding/ordering products on an online marketplace</li>
+                                    <li>Uses NodeJS backend along with a MongoDB database for backend</li>
+                                    <li>User authentication implemented so that different users will see different products/order history</li>
+                                    <li><a class="hobbylinks" href="https://github.com/codyuhi/onlineMarket">See Client Repo</a></li>
+                                    <li><a class="hobbylinks" href="https://github.com/codyuhi/Node-Rest-Shop">See Server Repo</a></li>
+                                </ul>
+                            </li>
+                            <li>The Eureka Trail Game
+                                <ul class="hobbyinfolist">
+                                    <li>Flutter app used as part of a fitness research project for BYU</li>
+                                    <li>Gamify walking by providing in-game incentives for steps taken/distance traveled</li>
+                                    <li><a class="hobbylinks" href="https://theeurekatrail.com/">See app website</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hobbybox">
+                        <h3 class="hobbytitle">Art</h3>
+                        <ul class="hobbyinfo">
+                            <li>Once I graduate, I would love to cultivate skills in drawing and photography</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h2>Leetcode Coding Challenges</h2>
-                </div>
-                <div>
-                    <h2>Capture the Flag Challenges</h2>
+                <div class="hobbycolumn2">
+                    <div class="hobbybox">
+                        <h3 class="hobbytitle">Hackathons</h3>
+                        <ul class="hobbyinfo">
+                            <li><a class="hobbylinks" href="https://www.hacktheu.org/">HackTheU</a>
+                                <ul class="hobbyinfolist">
+                                    <li><a class="hobbylinks" href="https://cloud.google.com/vision/">Google Cloud Vision</a> AI/ML Mobile App</li>
+                                    <li>Detects OCR text from camera > determines whether text is an address/url > opens map application to address/browser to url</li>
+                                    <li><a class="hobbylinks" href="https://github.com/codyuhi/whereaboutsv5">See Repo</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="hobbylinks" href="https://www.hackusu.org/">HackUSU</a>
+                                <ul class="hobbyinfolist">
+                                    <li>Winner - Data Science Category</li>
+                                    <li>Deep Fake Detection AI/ML Model (<a class="hobbylinks" href="https://www.tensorflow.org/">Tensorflow</a>)</li>
+                                    <li>Determine whether a given image is a Deep Fake face or a real person's face.  97% accuracy rate</li>
+                                    <li>Training data - 1000 Deep Fake images, 3000 verified Real images</li>
+                                    <li>Testing data - 100 Deep Fake images, 100 verified Real images</li>
+                                    <li><a class="hobbylinks" href="https://github.com/codyuhi/hackusu">See Repo</a> (training/testing data not present)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hobbybox">
+                        <h3 class="hobbytitle">Learning</h3>
+                        <ul class="hobbyinfo">
+                            <li><a class="hobbylinks" href="https://www.hackerrank.com/codyuhi">Hackerrank</a></li>
+                            <li><a class="hobbylinks" href="https://github.com/codyuhi/leetcode">Leetcode</a></li>
+                            <li><a class="hobbylinks" href="https://www.khanacademy.org/profile/codylkuhi/">Khan Academy</a></li>
+                            <li><a class="hobbylinks" href="https://www.duolingo.com/profile/CodyUhithe">DuoLingo</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h1>Studying Languages</h1>
-                <div>
-                    <h2>Tagalog</h2>
-                </div>
-                <div>
-                    <h2>Spanish</h2>
-                </div>
-                <div>
-                    <h2>Japanese</h2>
+            <div id="hobbyrow2">
+                <div class="hobbycolumn1">
+                    <div class="hobbybox">
+                        <h3 class="hobbytitle">Gaming</h3>
+                        <ul class="hobbyinfo">
+                            <li>Steam (<a class="hobbylinks" href="https://steamcommunity.com/id/theKoalohaBoat/">theKoalohaBoat</a>)</li>
+                            <li>Playstation (<a class="hobbylinks" href="https://my.playstation.com/profile/TheKoalohaBoat">TheKoalohaBoat</a>)</li>
+                            <li>Xbox (<a class="hobbylinks" href="https://account.xbox.com/en-us/Profile?xr=mebarnav&rtc=1">theKoalohaBoat</a>)</li>
+                            <li>Nintendo (theKoaBoat)</li>
+                            <li>Blizzard (theKoaBoat)</li>
+                            <li>Origin (thekoalohaboat)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="seemore">
+            <!-- <div class="seemore">
                 <h2>See More</h2>
                 <p>Find out more about what I've accomplished in these hobbies:</p>
                 <button id="workButton" onclick="location.replace('experience.html')">Get to Know Me</button>
-            </div>
-        </div> -->
+            </div> -->
+        </div>
 
         <!-- This is the div for contact information and links -->
         <div class="section" id="contact">
             <div id="contactlabel">
-                <div>
-                    <h1>Contact Me:</h1>
-                </div>
+                    <div>
+                        <p style="color: white;">:)</p>
+                        <h1 class="center">Contact Me:</h1>
+                    </div>
                     <a target="_blank" href="https://www.facebook.com/cody.uhi"><img src="img/fb.png"class="contacticon"></a>
                     <a target="_blank" href="https://www.instagram.com/uhicody/"><img src="img/ig.png"class="contacticon"></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/cody-u-b984b8117/"><img src="img/li.png"class="contacticon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/codyuhi/"><img src="img/li.png"class="contacticon"></a>
                     <a href="mailto:codyuhi@protonmail.com"><img src="img/em.png"class="contacticon"></a>
                 </div>
-                <p id="copyright">&#169 Cody Uhi 2019</p>
+                <p id="copyright">&#169 Cody Uhi 2020</p>
             </div>
             
         </div>
