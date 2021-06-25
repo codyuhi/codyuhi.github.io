@@ -1,0 +1,65 @@
+body {
+    background-color: #1D2228;
+}
+
+h1 {
+    color: #20B2AA;
+    font-size: 7.5em;
+}
+
+h2 {
+    color: #E1FCFD;
+}
+
+h3 {
+    color: #E1FCFD;
+    text-align: center;
+    font-size: 2em;
+}
+
+p, li {
+    color: #EAD6CD;
+}
+
+a {
+    color: #20B2AA;
+}
+
+li {
+    margin-top: .75em;
+}
+
+.text {
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-div {
+    margin: 3em;
+    width: 100%;
+}
+
+.sub-div {
+    display: inline-block;
+    margin: 3em;
+    vertical-align: top;
+}
+
+#kashti1-0-div {
+    width: 50%;
+}
+
+#credits-div {
+    background-color: #3FD2C7;
+    padding: 5em;
+}
+
+.credit-img {
+    width: 20em;
+    border-radius: 50%;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+#copyright {
+    text-align: center;
+}

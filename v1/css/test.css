@@ -1,0 +1,31 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+    transition: font-size 2s;
+    margin:auto;
+}
+
+div:hover {
+    width: 300px;
+    font-size: 200px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body {
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+    padding: 30px;
+}

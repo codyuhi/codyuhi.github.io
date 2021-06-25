@@ -1,0 +1,361 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.project-name {
+    color: var(--blueback);
+}
+
+.project-description, .tech-item {
+    color: var(--darktext);
+}
+
+:root {
+    --lightback: #cfdbd5;
+    /* --lighttext: #e8eddf; */
+    --lighttext: #FDFFF7;
+    --linktext: #f5cb5c;
+    --darktext: #242423;
+    --darkback: #333533;
+    --blueback: #4FB286;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 65px;
+    margin: 25px;
+}
+
+h3 {
+    max-width: 80vw;
+    text-align: center;
+}
+
+#page-navbar {
+    transition: all .25s linear;
+}
+
+.navbar-text, .bx {
+    color: var(--lighttext) !important;
+    transition: all .25s ease-in-out;
+}
+
+.navbar-text:hover {
+    text-decoration: none;
+    color: var(--linktext) !important;
+    transition: all .25s ease-in-out;
+}
+
+.navbar-background {
+    background-color: var(--blueback);
+    transition: all .25s linear;
+}
+
+.section {
+    min-height: 500px;
+    z-index: 2;
+}
+
+.flex-column, #courses-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+#intro-container {
+    color: var(--lighttext);
+    height: 100vh;
+}
+
+#intro-video {
+    position: fixed;
+    z-index: 1;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#intro {
+    width: 100vw;
+    height: 100vh;
+    min-height: 500px;
+    background-color: rgba(23, 24, 23, 0.75);
+    z-index: 2;
+}
+
+#about-container {
+    background-color: var(--lighttext);
+    color: var(--darktext);
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    background-color: var(--lighttext);
+}
+
+#about-pic {
+    flex: 1;
+}
+
+.tile-image {
+    width: 100%;
+    height: auto;
+}
+
+#about {
+    flex: 1;
+    max-width: 90%;
+    text-align: center;
+    margin: 50px;
+}
+
+#projects-container {
+    background-color: var(--darkback);
+    color: var(--lighttext);
+    padding: 50px 0 50px 0;
+}
+
+#projects {
+    padding: 50px 0 50px 0;
+}
+
+@keyframes backgroundscroller {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 500% 500%, 400% 400%, 300% 300%, 200% 200%, 100% 100%;
+    }
+}
+
+.project-cell-container {
+    padding: 15px;
+    margin: 15px;
+    flex-basis: 100%;
+    max-width: 90vw;
+    background-color: white;
+    color: var(--darktext);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease-in-out;
+    border-radius: 8px;
+}
+
+.project-cell-container:hover {
+    cursor: pointer;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0 5px 25px var(--blueback);
+    transform: scale(1.025);
+}
+
+.project-cell-container:hover>div>h4 {
+    transition: all 0.15s ease-in-out;
+    color: var(--blueback);
+}
+
+.project-cell {
+    padding: 15px;
+}
+
+.project-name {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#experience-container {
+    padding: 50px 0 0 0;
+    background-color: var(--lighttext);
+}
+
+.resume-buttons {
+    text-decoration: none;
+}
+
+.resume-buttons, .expand-buttons {
+    margin: 15px;
+    padding: 15px;
+    background-color: var(--blueback);
+    color: var(--lighttext);
+    font-weight: bold;
+    border: none;
+    transition: all 0.15s ease-in-out;
+    border-radius: 8px;
+}
+
+.resume-buttons:hover, .expand-buttons:hover {
+    cursor: pointer;
+    background-color: var(--darkback);
+    transition: all 0.15s ease-in-out;
+}
+
+.timeline {
+    width: 100vw;
+    max-width: 1200px;
+}
+
+.experience-cell-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: inherit;
+    background-color: var(--blueback);
+    border-radius: 6px;
+    width: 90vw;
+}
+
+.experience-image, .experience-image > img {
+    width: 45vw;
+    max-width: 400px;
+    height: auto;
+}
+
+.experience-image > img {
+    margin: 25px 0 15px 0;
+    border-radius: 15px;
+}
+
+.experience-cell {
+    padding: 15px;
+    color: var(--darkback);
+    text-align: center;
+}
+
+.experience-time {
+    font-weight: bold;
+}
+
+#education-container {
+    background-color: var(--lighttext);
+}
+
+.half-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#footer-container {
+    background-color: var(--darkback);
+}
+
+#footer {
+    width: 800px;
+    max-width: 90vw;
+    align-items: space-evenly;
+}
+
+#footer-links {
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+i.fa {
+    font-size: 30px;
+}
+
+.link-text {
+    color: var(--blueback);
+    transition: all .25s ease-in-out;
+}
+
+.link-text:hover {
+    color: var(--linktext);
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+}
+
+#copyright {
+    text-align: center;
+    color: var(--lighttext);
+}
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 444px) and (max-width: 1019px) {
+    #courses-container {
+        flex-direction: row;
+    }
+    #about {
+        max-width: 80%;
+    }
+    .experience-cell-container {
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 444px) and (max-width: 799px) {
+    .project-cell-container {
+        max-width: 75vw;
+    }
+    .experience-cell-container {
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1450px) {
+    #intro-container {
+        animation-duration: 150s;
+    }
+    .project-cell-container {
+        max-width: 40vw;
+        flex-basis: 50%;
+    }
+    .experience-cell-container {
+        width: 50vw;
+    }
+}
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 1020px) {
+    .project-cell-container {
+        max-width: 25vw;
+    }
+    #courses-container {
+        flex-direction: row;
+    }
+    #about-container {
+        flex-direction: row;
+    }
+    #about {
+        max-width: 80%;
+    }
+    .experience-cell-container {
+        width: 50vw;
+    }
+}
